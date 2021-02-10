@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="board" width="800" height="400"></canvas>
+    <div id="stats">
+        <div class="gameStats">Score: <span id="spanPoints" class="points">0</span></div>
+        <div class="gameStats" id="middle">
+            <div class="lives" id=first><img id="live3" src="images/heart24.png"></div>
+            <div class="lives"><img id="live2" src="images/heart24.png"></div>
+            <div class="lives"><img id="live1" src="images/heart24.png"></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="gameStats" id="last">
+            <div style="float: left;">OverHeat : </div><div style="float: left;" id="overHeat">
+                <div id="bar"></div>
+            </div>   
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <script src="script/ufo.js"></script>
+    <script src="script/enemyBullets.js"></script>
+    <script src="script/firstEnemy.js"></script>
+    <script src="script/secondEnemy.js"></script>
+    <script src="script/game.js"></script>
+</body>
+</html>
